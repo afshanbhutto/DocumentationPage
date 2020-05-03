@@ -1,0 +1,31 @@
+div.main-body{
+    display: grid;
+    grid-template-columns: minmax(250px, auto) 1fr;
+    grid-template-areas: "navbar mainContent";
+}
+header{
+    font-size: 1.6em;
+    font-weight:bold;
+}
+code{
+    background: #CCC;
+    display: block;
+    padding: 20px;
+}
+nav#navbar{
+    grid-area: navbar;
+    position: fixed;
+    border-bottom: 1px solid black;
+    border-right:  2px solid black;
+    width:230px;
+}
+nav#navbar a{
+    display:block;
+    padding: 0px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+main#main-doc{
+    grid-area: mainContent;
+}
